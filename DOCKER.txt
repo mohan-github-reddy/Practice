@@ -1,0 +1,79 @@
+Virtualization : process of creating the virtual machines
+Types of virtualization:Server level,Network level,Application level,Storage level,Desktop virtualization
+
+Hypervisor :
+
+Docker:
+-> Containerization tool that helps dev+ops teams using container virtualization technology
+-> set of platform 
+-> Containers are created from the read only templates called "Image" whereas Images can be built from
+the Docker File.
+
+ARCHITECTURE: 
+
+
+Docker Client: take instructions from the user
+Docker Engine: build,ship,run and manage the containers.
+Docker Hub: manage your upload your application
+Docker Registery: collection of docker images which is responsible for holding the images.
+Docker Image: nothing but read only which is used to create the docker containers or use the existing
+docker containers.
+Docker Daemon: it is nothing but a service and it;s a part of your docker engine.
+Docker Container: running state instance of an image and hold application dependencies
+
+To start Docker service --> service docker start
+To check the Docker statud--> service docker status(it will shows status has active)
+
+to list all the containers --> docker ps -a
+to show last created container --> docker ps -f
+
+que)If we Delete the container by mistake then how we can recover it ?
+--> No,
+
+Docker File: https://docs.docker.com/engine/reference/builder/
+
+FROM - tells about base image
+MAINTAINER - author who maintains our image
+LABEL - 
+
+
+
+
+
+
+
+
+
+
+
+
+
+AMAZON ECR(Elastic Container Registry)  AND ECS(Elastic Container Service) :
+
+ECR(Elastic Container Registry) - Fully managed service to store, manage and deploy docker container 
+images.
+-> Integrated with AWS ECS and AWS EKS.
+
+COMPONENTS:
+
+Registry: It is a private registry inorder to store the pictures.
+Authorization Token: 
+Repository: where 
+
+Amazon ECR WORKFLOW:
+step-1: Create a Docker file
+step-2: Build an Docker image
+step-3: *push the image to ECR
+step-4: pull to run containers
+step-5: ECS, EKS, Cloud, On-premise
+
+ECS(Elastic Container Service): 
+
+WORKFLOW:
+step-1: Service - Task definition, service definition
+step-2: schedule
+step-3: AWS ECS
+step-4: Place task - Fargata or EC2
+
+AWS ECS Cluster: Logical group of services.
+
